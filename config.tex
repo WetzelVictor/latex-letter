@@ -1,0 +1,25 @@
+% github: WetzelVictor/latex-letter
+%
+% This file is just a config file for a latex-letter
+%
+% encoding: UTF-8
+% language: French
+
+%%%% PACKAGES %%%%
+% Document class, font, size
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{textcomp}
+\usepackage{ifpdf}
+\ifpdf 
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage[dvips]{graphicx}
+\fi
+\pagestyle{empty}
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+\renewcommand{\ttdefault}{pcr}
